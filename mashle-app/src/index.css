@@ -11,3 +11,36 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.body-map {
+  padding: 24px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-map__container {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin: 0 25px;
+  height: 85vh;
+}
+
+.body-map__body {
+  height: 800px;
+}
+
+.body-map__model {
+  color: #000;
+}
+
+.body-map__muscle {
+  color: lightgrey;
+  transition: color 25ms ease-in-out;
+}
+
+.body-map__muscle:hover {
+  color: #fe5b7f;
+  cursor: pointer;
+}
