@@ -38,9 +38,38 @@ code {
 .body-map__muscle {
   color: lightgrey;
   transition: color 25ms ease-in-out;
+
 }
 
 .body-map__muscle:hover {
   color: #fe5b7f;
   cursor: pointer;
+}
+
+.body-map__muscle .tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: default;
+}
+
+.body-map__muscle .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.body-map__muscle .tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
